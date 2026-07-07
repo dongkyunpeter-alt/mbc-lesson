@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>블록과 인라인 친구들</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFF8E7;
+            padding: 30px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        h1 {
+            color: #FF6B6B;
+            text-align: center;
+            font-size: 32px;
+        }
+        .box {
+            border: 3px dashed #4ECDC4;
+            background-color: #E0F7FA;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 15px;
+        }
+        .inline-box {
+            border: 3px solid #FFE66D;
+            background-color: #FFF9C4;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 10px;
+            display: inline;
+        }
+        .example-block {
+            background-color: #FFCDD2;
+            border: 2px solid #E57373;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .example-inline {
+            background-color: #C8E6C9;
+            border: 2px solid #81C784;
+            padding: 5px;
+            margin: 0 3px;
+            border-radius: 5px;
+        }
+        .toy-box {
+            width: 100%;
+            background-color: #D1C4E9;
+            border: 3px solid #7E57C2;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        .toy-inline {
+            background-color: #FFAB91;
+            border: 2px solid #FF7043;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        ul {
+            background-color: #F8BBD0;
+            padding: 20px 40px;
+            border-radius: 15px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .highlight {
+            color: #D32F2F;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🧱 블록(Block) 친구와 ✏️ 인라인(Inline) 친구</h1>
+
+    <div class="box">
+        <h2>🤔 이게 뭔데요?</h2>
+        <p>
+            HTML 태그들은 마치 <span class="highlight">장난감 상자</span>와 <span class="highlight">장난감 조각</span> 같아요!<br><br>
+            
+            <strong>블록(Block)</strong> 친구들은 <span class="highlight">큰 장난감 상자</span>처럼 혼자서 한 줄을 다 차지해요.<br>
+            상자를 옆으로 못 붙이고, 위아래로 쌓아요. (레고 블록 쌓기처럼!)<<br><br>
+            
+            <strong>인라인(Inline)</strong> 친구들은 <span class="highlight">작은 장난감 조각</span>처럼 옆으로 붙을 수 있어요.<br>
+            한 줄에 여러 개가 나란히 앉을 수 있어요. (기차 칸처럼!)
+        </p>
+    </div>
+
+    <h2>🧱 블록(Block) 친구들 (큰 상자들)</h2>
+    <p>이 친구들은 <strong>무조건 한 줄을 다 써요!</strong> 옆에 다른 친구가 못 붙어요.</p>
+
+    <div class="toy-box">나는 &lt;div&gt; 상자야! 혼자 한 줄을 다 써!</div>
+    <div class="toy-box">나는 &lt;p&gt; 문단이야! 나도 한 줄을 다 써!</div>
+    <div class="toy-box">나는 &lt;h1&gt;~&lt;h6&gt; 제목이야! 나도 한 줄을 다 써!</div>
+
+    <div class="box">
+        <h3>📦 블록 친구 종류들</h3>
+        <ul>
+            <li><code>&lt;div&gt;</code> - 아무것도 없는 큰 상자 (제일 많이 써요)</li>
+            <li><code>&lt;p&gt;</code> - 글 문단 상자</li>
+            <li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> - 제목 상자 (큰 제목 ~ 작은 제목)</li>
+            <li><code>&lt;ul&gt;</code> - 동그라미 목록 상자</li>
+            <li><code>&lt;ol&gt;</code> - 숫자 목록 상자</li>
+            <li><code>&lt;li&gt;</code> - 목록 안의 항목 상자</li>
+            <li><code>&lt;header&gt;</code> - 머리말 상자</li>
+            <li><code>&lt;footer&gt;</code> - 꼬리말 상자</li>
+            <li><code>&lt;section&gt;</code> - 구역 상자</li>
+            <li><code>&lt;article&gt;</code> - 글 구역 상자</li>
+            <li><code>&lt;nav&gt;</code> - 메뉴 구역 상자</li>
+            <li><code>&lt;form&gt;</code> - 입력 양식 상자</li>
+            <li><code>&lt;table&gt;</code> - 표 상자</li>
+            <li><code>&lt;blockquote&gt;</code> - 인용문 상자</li>
+            <li><code>&lt;pre&gt;</code> - 그대로 보여주는 상자</li>
+            <li><code>&lt;hr&gt;</code> - 가로줄 (상자는 아니지만 한 줄을 다 써요)</li>
+        </ul>
+    </div>
+
+    <h2>✏️ 인라인(Inline) 친구들 (작은 조각들)</h2>
+    <p>이 친구들은 <strong>옆으로 붙을 수 있어요!</strong> 한 줄에 여러 개가 들어갈 수 있어요.</p>
+
+    <span class="toy-inline">나는 &lt;span&gt;</span>
+    <span class="toy-inline">나는 &lt;a&gt; 링크</span>
+    <span class="toy-inline">나는 &lt;strong&gt; 굵은 글씨</span>
+    <span class="toy-inline">나는 &lt;em&gt; 기울인 글씨</span>
+    <span class="toy-inline">나도 붙을 수 있어!</span>
+
+    <div class="box">
+        <h3>🧩 인라인 친구 종류들</h3>
+        <ul>
+            <li><code>&lt;span&gt;</code> - 아무것도 없는 작은 조각 (제일 많이 써요)</li>
+            <li><code>&lt;a&gt;</code> - 링크 (다른 페이지로 가는 다리)</li>
+            <li><code>&lt;strong&gt;</code> - 굵고 센 글씨</li>
+            <li><code>&lt;em&gt;</code> - 기울인 글씨 (강조!)</li>
+            <li><code>&lt;img&gt;</code> - 사진 조각</li>
+            <li><code>&lt;input&gt;</code> - 입력칸 조각</li>
+            <li><code>&lt;label&gt;</code> - 이름표 조각</li>
+            <li><code>&lt;button&gt;</code> - 버튼 조각</li>
+            <li><code>&lt;code&gt;</code> - 코드 글씨 조각</li>
+            <li><code>&lt;small&gt;</code> - 작은 글씨 조각</li>
+            <li><code>&lt;br&gt;</code> - 줄바꿈 (작은 휴식!)</li>
+            <li><code>&lt;b&gt;</code> - 굵은 글씨</li>
+            <li><code>&lt;i&gt;</code> - 기울인 글씨</li>
+            <li><code>&lt;u&gt;</code> - 밑줄 글씨</li>
+            <li><code>&lt;sub&gt;</code> - 아래 첨자</li>
+            <li><code>&lt;sup&gt;</code> - 위 첨자</li>
+        </ul>
+    </div>
+
+    <h2>🎯 쉽게 외우는 방법!</h2>
+    <div class="box">
+        <p>
+            🧱 <strong>블록(Block)</strong> = <span class="highlight">레고 블록</span><br>
+            → 한 줄을 다 차지하고, 위아래로 쌓여요.<br>
+            → 상자 안에 다른 상자와 조각을 넣을 수 있어요!<br><br>
+            
+            ✏️ <strong>인라인(Inline)</strong> = <span class="highlight">기차 칸</span> 또는 <span class="highlight">구슬</span><br>
+            → 옆으로 붙을 수 있어요.<br>
+            → 조각 안에는 글자만 넣을 수 있고, 큰 상자는 못 넣어요!
+        </p>
+    </div>
+
+    <h2>🧪 실험해보기!</h2>
+    <p>아래 예제를 보면서 차이를 느껴보세요:</p>
+
+    <div class="example-block">
+        나는 블록(div)이에요! 혼자 이 한 줄을 다 차지하지요.
+    </div>
+    <div class="example-block">
+        나도 블록(div)이에요! 위 친구 아래에 쌓여요.
+    </div>
+
+    <p>
+        여기는 문단 안이에요. 
+        <span class="example-inline">나는 인라인(span)</span>
+        <span class="example-inline">나도 인라인(span)</span>
+        <span class="example-inline">우리는 옆으로 붙어요!</span>
+        그리고 문단은 계속돼요.
+    </p>
+
+    <div class="box" style="background-color: #FFF3E0; border-color: #FFB74D;">
+        <h3>💡 선생님의 꿀팁!</h3>
+        <p>
+            <strong>블록 상자 안에는</strong> 블록 상자도, 인라인 조각도 다 넣을 수 있어요!<br>
+            (큰 상자 안에 작은 상자와 조각을 넣는 것처럼)<br><br>
+            
+            <strong>인라인 조각 안에는</strong> 다른 인라인 조각은 넣을 수 있지만,<br>
+            블록 상자는 넣으면 안 돼요! (작은 구슬 안에 큰 상자는 못 넣죠?)
+        </p>
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px; color: #888; font-size: 14px;">
+        <p>🌈 유치원생도 이해하는 HTML - 블록과 인라인 편 🌈</p>
+    </footer>
+
+</body>
+</html>

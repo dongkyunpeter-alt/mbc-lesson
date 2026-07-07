@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GeminiCLI]
+@="Gemini CLI 여기서 열기"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GeminiCLI\command]
+@="cmd.exe /s /k \"cd /d \"%V\" && gemini\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\GeminiCLI]
+@="Gemini CLI 여기서 열기"
+
+[HKEY_CLASSES_ROOT\Directory\shell\GeminiCLI\command]
+@="cmd.exe /s /k \"cd /d \"%1\" && gemini\""

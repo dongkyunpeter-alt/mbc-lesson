@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+    <title>레이아웃</title>
+    <style>
+      .cont {
+        display: grid;
+        grid-template-areas:
+          "box1 box2"
+          "box3 box4";
+      }
+      .item {
+        width: 50%;
+        height: 100px;
+      }
+      .item:nth-child(1) {
+        grid-area: box1;
+        background-color: red;
+      }
+      .item:nth-child(2) {
+        grid-area: box2;
+        background-color: rgb(82, 22, 221);
+      }
+      .item:nth-child(3) {
+        grid-area: box3;
+        background-color: rgb(23, 226, 23);
+      }
+      .item:nth-child(4) {
+        grid-area: box4;
+        background-color: rgb(213, 226, 26);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </body>
+</html>

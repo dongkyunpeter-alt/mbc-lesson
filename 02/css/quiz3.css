@@ -1,0 +1,16 @@
+h1 {
+  font-size: 28x;
+  letter-spacing: 0.5px;
+}
+ul {
+  list-style: none;
+}
+span {
+  color: brown;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+li {
+  line-height: 2;
+}

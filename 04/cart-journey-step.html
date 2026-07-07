@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Order - Journey Step</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="device-frame theme-journey fade-in">
+        <!-- Status Bar Simulator -->
+        <div class="status-bar">
+            <span class="time">9:41</span>
+            <div class="right-icons">
+                <span class="cellular">📶</span>
+                <span class="wifi">📶</span>
+                <span class="battery">
+                    <span class="battery-level"></span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Scrollable content -->
+        <div class="screen-scroll-container">
+            <!-- Stepper (Figma 2:139) -->
+            <div class="stepper-journey">
+                <div class="step-item active">
+                    <span class="step-num">1</span>
+                    <span class="step-label">Cart</span>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">2</span>
+                    <span class="step-label">Shipping</span>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">3</span>
+                    <span class="step-label">Payment</span>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">4</span>
+                    <span class="step-label">Confirm</span>
+                </div>
+            </div>
+
+            <!-- Content Area (Figma 2:156) -->
+            <div class="content-journey">
+                <h2 class="journey-title">Review Order</h2>
+
+                <!-- Items Card (Figma 2:158) -->
+                <div class="journey-card" id="journey-items-card">
+                    <!-- Item 1 (AirPure Linen Robe) -->
+                    <div class="item-row-journey" id="item-journey-1">
+                        <img src="images/robe_journey.png" alt="AirPure Linen Robe" class="item-img-journey">
+                        <div class="item-details-journey">
+                            <h4 class="item-name-journey">AirPure Linen Robe</h4>
+                            <span class="item-meta-journey">Qty: 1 · $128</span>
+                        </div>
+                        <button class="remove-btn-journey" data-id="1">⊗</button>
+                    </div>
+
+                    <!-- Item 2 (Silk Sleep Mask) -->
+                    <div class="item-row-journey" id="item-journey-2">
+                        <img src="images/mask_journey.png" alt="Silk Sleep Mask" class="item-img-journey">
+                        <div class="item-details-journey">
+                            <h4 class="item-name-journey">Silk Sleep Mask</h4>
+                            <span class="item-meta-journey">Qty: 1 · $32</span>
+                        </div>
+                        <button class="remove-btn-journey" data-id="2">⊗</button>
+                    </div>
+
+                    <!-- Item 3 (Ceramic Mist Diffuser) -->
+                    <div class="item-row-journey" id="item-journey-3">
+                        <img src="images/diffuser_journey.png" alt="Ceramic Mist Diffuser" class="item-img-journey">
+                        <div class="item-details-journey">
+                            <h4 class="item-name-journey">Ceramic Mist Diffuser</h4>
+                            <span class="item-meta-journey">Qty: 1 · $85</span>
+                        </div>
+                        <button class="remove-btn-journey" data-id="3">⊗</button>
+                    </div>
+                </div>
+
+                <!-- Order Summary Card (Figma 2:177) -->
+                <div class="summary-card-journey">
+                    <h3 class="summary-title">Order Summary</h3>
+                    <div class="summary-details">
+                        <div class="summary-row label-val">
+                            <span>Subtotal</span>
+                            <span id="journey-subtotal">$245.00</span>
+                        </div>
+                        <div class="summary-row label-val">
+                            <span>Estimated Shipping</span>
+                            <span class="val-free">FREE</span>
+                        </div>
+                        <div class="summary-row label-val">
+                            <span>Estimated Tax</span>
+                            <span id="journey-tax">$21.50</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-row total-row">
+                            <span>Total</span>
+                            <span id="journey-total">$266.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Continue (Figma 2:193) -->
+        <footer class="footer-journey">
+            <a href="cart-product-first.html" class="checkout-btn-journey" id="journey-submit-btn">Continue to Shipping</a>
+        </footer>
+
+        <!-- iOS Bottom Indicator Simulation -->
+        <div class="home-indicator-wrapper">
+            <div class="home-indicator"></div>
+        </div>
+    </div>
+
+    <!-- JS Link -->
+    <script src="js/main.js"></script>
+</body>
+</html>

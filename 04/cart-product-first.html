@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bag - Product Centric</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="device-frame theme-product-first fade-in">
+        <!-- Status Bar Simulator -->
+        <div class="status-bar">
+            <span class="time">9:41</span>
+            <div class="right-icons">
+                <span class="cellular">📶</span>
+                <span class="wifi">📶</span>
+                <span class="battery">
+                    <span class="battery-level"></span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Scrollable content -->
+        <div class="screen-scroll-container">
+            <!-- Header (Figma 2:14) -->
+            <header class="header-first">
+                <a href="index.html" class="back-icon">‹</a>
+                <h1 class="title">Your Bag</h1>
+                <button class="edit-btn">Edit</button>
+            </header>
+
+            <!-- Product Items List (Figma 2:18) -->
+            <div class="items-list-first">
+                <!-- Item 1 (AirPure Linen Robe) -->
+                <div class="item-row-first" id="item-first-1">
+                    <img src="images/robe_first.png" alt="AirPure Linen Robe" class="item-img-first">
+                    <div class="item-details-first">
+                        <div>
+                            <h3 class="item-name-first">AirPure Linen Robe</h3>
+                            <p class="item-option-first">Oatmeal · M</p>
+                        </div>
+                        <span class="item-price-first">$128.00</span>
+                    </div>
+                    <div class="item-controls-first">
+                        <div class="qty-selector">
+                            <button class="qty-btn minus" data-id="1">-</button>
+                            <span class="qty-val" id="qty-1">1</span>
+                            <button class="qty-btn plus" data-id="1">+</button>
+                        </div>
+                        <button class="remove-btn-first" data-id="1">Remove</button>
+                    </div>
+                </div>
+
+                <!-- Item 2 (Silk Sleep Mask) -->
+                <div class="item-row-first" id="item-first-2">
+                    <img src="images/mask_first.png" alt="Silk Sleep Mask" class="item-img-first">
+                    <div class="item-details-first">
+                        <div>
+                            <h3 class="item-name-first">Silk Sleep Mask</h3>
+                            <p class="item-option-first">Charcoal · OS</p>
+                        </div>
+                        <span class="item-price-first">$32.00</span>
+                    </div>
+                    <div class="item-controls-first">
+                        <div class="qty-selector">
+                            <button class="qty-btn minus" data-id="2">-</button>
+                            <span class="qty-val" id="qty-2">1</span>
+                            <button class="qty-btn plus" data-id="2">+</button>
+                        </div>
+                        <button class="remove-btn-first" data-id="2">Remove</button>
+                    </div>
+                </div>
+
+                <!-- Item 3 (Ceramic Mist Diffuser) -->
+                <div class="item-row-first" id="item-first-3">
+                    <img src="images/diffuser_first.png" alt="Ceramic Mist Diffuser" class="item-img-first">
+                    <div class="item-details-first">
+                        <div>
+                            <h3 class="item-name-first">Ceramic Mist Diffuser</h3>
+                            <p class="item-option-first">Stone · Small</p>
+                        </div>
+                        <span class="item-price-first">$85.00</span>
+                    </div>
+                    <div class="item-controls-first">
+                        <div class="qty-selector">
+                            <button class="qty-btn minus" data-id="3">-</button>
+                            <span class="qty-val" id="qty-3">1</span>
+                            <button class="qty-btn plus" data-id="3">+</button>
+                        </div>
+                        <button class="remove-btn-first" data-id="3">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Pricing and Action (Figma 2:58) -->
+        <footer class="footer-first">
+            <div class="pricing-table-first">
+                <div class="pricing-row-first subtotal">
+                    <span>Subtotal</span>
+                    <span id="subtotal-val">$245.00</span>
+                </div>
+                <div class="pricing-row-first shipping">
+                    <span>Shipping</span>
+                    <span class="val">Free</span>
+                </div>
+                <div class="pricing-row-first total">
+                    <span>Total</span>
+                    <span id="total-val">$245.00</span>
+                </div>
+            </div>
+            <a href="cart-price-centric.html" class="checkout-btn-first">Checkout</a>
+        </footer>
+
+        <!-- iOS Bottom Indicator Simulation -->
+        <div class="home-indicator-wrapper">
+            <div class="home-indicator"></div>
+        </div>
+    </div>
+
+    <!-- JS Link -->
+    <script src="js/main.js"></script>
+</body>
+</html>

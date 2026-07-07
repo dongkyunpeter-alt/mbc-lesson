@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <!-- form : 웹브라우저에서 유일하게 사용자의 데이터를 입력받을 수 있는 요소
+    action : 사용자 정보를 저장할 서버주소
+    method : 전송방식(get-공개형, post-비공개형) -->
+    <form action="#" method="get">
+      <fieldset>
+        <legend>회원가입</legend>
+        <p>아이디: <input type="text" /></p>
+        <p>비밀번호: <input type="password" /></p>
+        <p>이름: <input type="text" /></p>
+        <p>전화번호: <input type="tel" /></p>
+        <p>이메일: <input type="email" />@<input type="email"></p>
+        <p>생년월일: <input type="date" /></p>
+        <br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

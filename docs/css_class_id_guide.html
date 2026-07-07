@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>🏷️ 클래스(Class)와 아이디(ID) 친구들</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F0F4F8;
+            padding: 30px;
+            line-height: 1.8;
+            font-size: 18px;
+            color: #333;
+        }
+        h1 {
+            color: #4A90E2;
+            text-align: center;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .box {
+            border: 3px solid #E1E8ED;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+        .class-box {
+            border-color: #7ED321;
+            background-color: #F9FFF0;
+        }
+        .id-box {
+            border-color: #D0021B;
+            background-color: #FFF5F5;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .class-title { color: #417505; }
+        .id-title { color: #A40115; }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .class-badge { background-color: #7ED321; }
+        .id-badge { background-color: #D0021B; }
+
+        .example {
+            background-color: #F8F9FA;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: 'Consolas', monospace;
+            font-size: 16px;
+            border-left: 5px solid #CBD5E0;
+        }
+        .highlight {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .summary {
+            background-color: #FFFBE6;
+            border: 2px dashed #FFE58F;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🏷️ CSS 클래스(Class)와 아이디(ID)</h1>
+
+        <div class="box">
+            <p>
+                HTML 태그들에게 별명을 붙여주고 싶을 때가 있어요!<br>
+                그럴 때 사용하는 것이 바로 <strong>클래스(Class)</strong>와 <strong>아이디(ID)</strong>예요.
+            </p>
+        </div>
+
+        <div class="box class-box">
+            <span class="badge class-badge">교복 같은 클래스 (Class)</span>
+            <h2 class="class-title">👕 클래스는 "여러 명"이 같이 써요!</h2>
+            <p>
+                학교 교복이나 축구팀 유니폼을 생각해보세요.<br>
+                같은 반 친구들이 모두 같은 교복을 입는 것처럼,<br>
+                <span class="highlight">여러 개의 태그에 똑같은 스타일</span>을 주고 싶을 때 사용해요.
+            </p>
+            <ul>
+                <li>여러 번 사용할 수 있어요.</li>
+                <li>CSS에서는 이름 앞에 마침표(<code>.</code>)를 찍어서 불러요.</li>
+            </ul>
+            <div class="example">
+                .우리반친구들 { <br>
+                &nbsp;&nbsp;color: green;<br>
+                }
+            </div>
+        </div>
+
+        <div class="box id-box">
+            <span class="badge id-badge">이름표 같은 아이디 (ID)</span>
+            <h2 class="id-title">🆔 아이디는 "딱 한 명"만 써요!</h2>
+            <p>
+                우리 집 주소나 나의 주민등록번호처럼,<br>
+                <span class="highlight">단 하나뿐인 특별한 태4그</span>를 찾을 때 사용해요.<br>
+                한 페이지에 똑같은 아이디를 여러 개 쓰면 컴퓨터가 헷갈려해요!
+            </p>
+            <ul>
+                <li>딱 한 번만 사용해야 해요.</li>
+                <li>CSS에서는 이름 앞에 샵(<code>#</code>)을 찍어서 불러요.</li>
+            </ul>
+            <div class="example">
+                #나만의보물상자 { <br>
+                &nbsp;&nbsp;background-color: gold;<br>
+                }
+            </div>
+        </div>
+
+        <div class="summary">
+            <h3>🎯 이것만 기억하세요!</h3>
+            <p>
+                🏠 <strong>클래스(.)</strong> : "모두 모여라!" (여러 개 꾸미기)<br>
+                ☝️ <strong>아이디(#)</strong> : "너만 나와!" (딱 하나만 꾸미기)
+            </p>
+        </div>
+
+        <footer style="text-align: center; margin-top: 40px; color: #888; font-size: 14px;">
+            <p>🌈 초등학생도 이해하는 CSS - 클래스와 아이디 편 🌈</p>
+        </footer>
+    </div>
+
+</body>
+</html>

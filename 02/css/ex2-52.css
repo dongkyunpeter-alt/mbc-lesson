@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import url(reset.css);
+body {
+  background: url(../imgs/bg_grid.gif);
+}
+p {
+  background: rgba(0, 100, 200, 0.3);
+  width: 600px;
+  padding: 10px;
+  margin: 20px; /* w: 620px, margin은 너비에 포함X */
+  margin-top: 50px;
+  margin-bottom: 50px; /* 마진 겹침현상: 상하방향일 때만 적용, 더 큰 값이 적용 */
+}
+.art2 {
+  width: 300px;
+  margin: 0px auto; /* 인접한 요소의 상,하 마진값이 0이여도 p에서 적용된 마진값이 더 크기때문에 50px이 적용 */
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+p:nth-child(3) {
+  margin: 40px auto;
+}

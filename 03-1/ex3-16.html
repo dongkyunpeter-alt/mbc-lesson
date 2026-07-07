@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let kor = parseInt(prompt("국어 점수를 입력하세요"));
+      let eng = parseInt(prompt("영어 점수를 입력하세요"));
+      let math = parseInt(prompt("수학 점수를 입력하세요"));
+      let avg = (kor + eng + math) / 3;
+      let result = `합격: ${kor >= 60 && eng >= 60 && math >= 60 && avg >= 70}`;
+      document.write(result);
+    </script>
+  </body>
+</html>

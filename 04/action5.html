@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action 5 - Secondary Detail</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Smartphone Frame Simulation -->
+    <div class="device-frame">
+        <!-- iOS Status Bar Simulation -->
+        <div class="status-bar">
+            <span class="time">9:41</span>
+            <div class="right-icons">
+                <span class="cellular">📶</span>
+                <span class="wifi">📶</span>
+                <span class="battery">
+                    <span class="battery-level"></span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Phone screen contents -->
+        <div class="screen-content fade-in">
+            <div class="detail-view">
+                <!-- Navigation Header -->
+                <div class="detail-header">
+                    <a href="index.html" class="back-btn">
+                        <span>‹</span> Home
+                    </a>
+                </div>
+
+                <!-- Main Content -->
+                <div class="detail-main">
+                    <div class="detail-icon-box secondary">
+                        🛠️
+                    </div>
+                    <h2 class="detail-title">Action 5</h2>
+                    <p class="detail-desc">
+                        이것은 다섯 번째 액션(Action 5)의 결과 페이지입니다. 작업을 계속하시겠습니까?
+                    </p>
+                </div>
+
+                <!-- Footer Actions -->
+                <div class="detail-footer">
+                    <a href="#" class="action-confirm-btn secondary" id="confirm-btn">확인 및 진행</a>
+                    <a href="index.html" class="action-cancel-link">취소</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- iOS Bottom Indicator Simulation -->
+        <div class="home-indicator"></div>
+    </div>
+
+    <!-- JS Link -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const confirmBtn = document.getElementById('confirm-btn');
+            if (confirmBtn) {
+                confirmBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    alert('Action 5 작업이 완료되었습니다.');
+                    window.location.href = 'index.html';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

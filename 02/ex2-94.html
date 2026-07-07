@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>16:9 반응형 영상</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .video {
+        aspect-ratio: 16/9;
+      }
+      .video iframe {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        width: 200px;
+        height: 400px;
+        filter: drop-shadow(2px 2px 10px #000);
+        /* box-shadow: 2px 2px 10px rgb(255, 2, 2); */
+        display: inline-block;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .fill {
+        object-fit: fill; /* 이미지의 비율을 유지하지 않고 요소에 꽉 차게 채움 */
+      }
+      .contain {
+        object-fit: contain; /* 이미지 비율을 유지하면서 요소 크기에 맞춤 */
+      }
+      .cover {
+        object-fit: cover; /* 이미지의 비율을 유지하면서 요소에 꽉 차게 채움 */
+      }
+      .none {
+        object-fit: none; /* 이미지의 원래 크기 유지 */
+      }
+      .scale-down {
+        object-fit: scale-down; /* cover, contain 중 작은 쪽 사용 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video">
+      <video src="imgs/video.mp4" autoplay></video>
+    </div>
+
+    <div class="container">
+      <img src="imgs/rhino.jpg" alt="코뿔소" class="fill" />
+      <h3>object-fit: fill</h3>
+    </div>
+    <div class="container">
+      <img src="imgs/rhino.jpg" alt="코뿔소" class="contain" />
+      <h3>object-fit: contain</h3>
+    </div>
+    <div class="container">
+      <img src="imgs/rhino.jpg" alt="코뿔소" class="cover" />
+      <h3>object-fit: cover</h3>
+    </div>
+    <div class="container">
+      <img src="imgs/rhino.jpg" alt="코뿔소" class="none" />
+      <h3>object-fit: none</h3>
+    </div>
+    <div class="container">
+      <img src="imgs/rhino.jpg" alt="코뿔소" class="scale-down" />
+      <h3>object-fit: scale-down</h3>
+    </div>
+  </body>
+</html>

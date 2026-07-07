@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+  color: #aaa;
+  transition: color 0.2s ease;
+  font-size: 14px;
+}
+a:hover {
+  color: blue;
+}
+.br1 {
+  width: 150px;
+  border: 5px solid green;
+  margin: auto;
+}
+hr,
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+}
+.img1,
+.img2 {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.br1:nth-child(2) {
+  border-color: pink;
+  margin-top: 50px;
+}

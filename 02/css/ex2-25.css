@@ -1,0 +1,16 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 10px;
+}
+p.letter2 {
+  /* 글자 사이의 간격 letter */
+  letter-spacing: 15px;
+}
+p.letter3 {
+  /* 단어 사이의 간격 word */
+  word-spacing: 30px;
+}

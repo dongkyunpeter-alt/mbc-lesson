@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action 1 - Destructive Detail</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Smartphone Frame Simulation -->
+    <div class="device-frame">
+        <!-- iOS Status Bar Simulation -->
+        <div class="status-bar">
+            <span class="time">9:41</span>
+            <div class="right-icons">
+                <span class="cellular">📶</span>
+                <span class="wifi">📶</span>
+                <span class="battery">
+                    <span class="battery-level"></span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Phone screen contents -->
+        <div class="screen-content fade-in">
+            <div class="detail-view">
+                <!-- Navigation Header -->
+                <div class="detail-header">
+                    <a href="index.html" class="back-btn">
+                        <span>‹</span> Home
+                    </a>
+                </div>
+
+                <!-- Main Content -->
+                <div class="detail-main">
+                    <div class="detail-icon-box destructive">
+                        ⚠️
+                    </div>
+                    <h2 class="detail-title">Action 1</h2>
+                    <p class="detail-desc">
+                        이것은 피그마 디자인의 첫 번째 액션인 Destructive 액션의 결과 페이지입니다. 정말로 진행하시겠습니까?
+                    </p>
+                </div>
+
+                <!-- Footer Actions -->
+                <div class="detail-footer">
+                    <a href="#" class="action-confirm-btn destructive" id="confirm-btn">삭제 진행</a>
+                    <a href="index.html" class="action-cancel-link">취소</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- iOS Bottom Indicator Simulation -->
+        <div class="home-indicator"></div>
+    </div>
+
+    <!-- JS Link -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const confirmBtn = document.getElementById('confirm-btn');
+            if (confirmBtn) {
+                confirmBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    alert('Action 1 Destructive 작업이 성공적으로 실행되었습니다.');
+                    window.location.href = 'index.html';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

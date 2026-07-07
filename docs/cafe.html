@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Cafe - 디자인 구현</title>
+    <!-- 구글 폰트 불러오기 -->
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #724b30;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* 전체 배너 컨테이너 */
+        .banner {
+            display: flex;
+            width: 1422px; /* 343 + 736 + 343 */
+            height: 421px; /* 314 + 107 */
+            border: 4px solid #9a7f6c;
+            box-sizing: content-box;
+            background-color: #724b30;
+            transform-origin: center center;
+        }
+
+        /* 왼쪽/오른쪽 이미지 박스 */
+        .side-image {
+            width: 343px;
+            height: 100%;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .side-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 중앙 콘텐츠 영역 */
+        .middle-content {
+            width: 736px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-left: 4px solid #9a7f6c;
+            border-right: 4px solid #9a7f6c;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        /* 중앙 상단 타이틀 박스 */
+        .title-box {
+            height: 314px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #724b30;
+            overflow: hidden;
+        }
+
+        .title-text {
+            font-family: 'Danfo', serif;
+            font-size: 153.8px;
+            text-align: center;
+            line-height: 0.82;
+            color: transparent;
+            background: url("https://www.figma.com/api/mcp/asset/d4baa4d6-be38-4b43-967e-ff38396e06db") center/cover no-repeat;
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin: 0;
+            padding: 10px 0;
+            text-transform: uppercase;
+        }
+
+        /* 중앙 하단 슬로건 박스 (녹색 배경) */
+        .slogan-box {
+            height: 107px;
+            background-color: #394c28;
+            border-top: 4px solid #9a7f6c;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slogan-text {
+            font-family: 'DM Mono', monospace;
+            font-size: 24px;
+            font-weight: 500;
+            color: #dadfe2;
+            text-align: center;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+    </style>
+    <script>
+        function resizeBanner() {
+            const banner = document.querySelector('.banner');
+            const scale = Math.min((window.innerWidth - 40) / 1430, (window.innerHeight - 40) / 430);
+            banner.style.transform = `scale(${scale})`;
+        }
+        window.onresize = resizeBanner;
+        window.onload = resizeBanner;
+    </script>
+</head>
+<body>
+    <div class="banner">
+        <!-- 왼쪽 이미지 -->
+        <div class="side-image">
+            <img src="https://www.figma.com/api/mcp/asset/86e005e1-b5e4-4e28-a156-78b8b126762b" alt="">
+        </div>
+
+        <!-- 중앙 영역 -->
+        <div class="middle-content">
+            <div class="title-box">
+                <h1 class="title-text">good</h1>
+                <h1 class="title-text" style="margin-top: -30px;">cafe</h1>
+            </div>
+            <div class="slogan-box">
+                <div class="slogan-text">"FRESHLY ROASTED, CAREFULLY BREWED"</div>
+            </div>
+        </div>
+
+        <!-- 오른쪽 이미지 -->
+        <div class="side-image">
+            <img src="https://www.figma.com/api/mcp/asset/76e34af4-8bdc-4cdd-8b55-6ed46d6c34ba" alt="">
+        </div>
+    </div>
+</body>
+</html>

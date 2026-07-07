@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+p::before {
+  content: "🍔";
+  display: block;
+  font-size: 3rem;
+}
+p::after {
+  content: "요고추가";
+  color: red;
+  font-size: 32px;
+  text-shadow: 2px 2px 2px red;
+}

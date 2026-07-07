@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag - Price Centric</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="device-frame theme-price-centric fade-in">
+        <!-- Status Bar Simulator -->
+        <div class="status-bar">
+            <span class="time">9:41</span>
+            <div class="right-icons">
+                <span class="cellular">📶</span>
+                <span class="wifi">📶</span>
+                <span class="battery">
+                    <span class="battery-level"></span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Scrollable content -->
+        <div class="screen-scroll-container">
+            <!-- Price Hero Block (Figma 2:83) -->
+            <section class="hero-total-centric">
+                <div class="hero-header">
+                    <span class="hero-label">Estimated Total</span>
+                    <span class="save-badge">YOU SAVED $45.00</span>
+                </div>
+                <h1 class="big-price" id="centric-big-price">$266.50</h1>
+                <p class="tax-info">Prices include all taxes and duties</p>
+            </section>
+
+            <!-- Centric Items List (Figma 2:90) -->
+            <div class="items-list-centric">
+                <!-- Item 1 (AirPure Linen Robe) -->
+                <div class="item-row-centric" id="item-centric-1">
+                    <img src="images/robe_centric.png" alt="AirPure Linen Robe" class="item-img-centric">
+                    <div class="item-details-centric">
+                        <h4 class="item-name-centric">AirPure Linen Robe</h4>
+                        <div class="item-meta-centric">
+                            <span class="item-qty-centric" id="centric-qty-1">Qty: 1</span>
+                            <div class="centric-divider"></div>
+                            <span class="item-price-centric">$128.00</span>
+                        </div>
+                    </div>
+                    <button class="remove-btn-centric" data-id="1">🗑️</button>
+                </div>
+
+                <!-- Item 2 (Silk Sleep Mask) -->
+                <div class="item-row-centric" id="item-centric-2">
+                    <img src="images/mask_centric.png" alt="Silk Sleep Mask" class="item-img-centric">
+                    <div class="item-details-centric">
+                        <h4 class="item-name-centric">Silk Sleep Mask</h4>
+                        <div class="item-meta-centric">
+                            <span class="item-qty-centric" id="centric-qty-2">Qty: 1</span>
+                            <div class="centric-divider"></div>
+                            <span class="item-price-centric">$32.00</span>
+                        </div>
+                    </div>
+                    <button class="remove-btn-centric" data-id="2">🗑️</button>
+                </div>
+
+                <!-- Item 3 (Ceramic Mist Diffuser) -->
+                <div class="item-row-centric" id="item-centric-3">
+                    <img src="images/diffuser_centric.png" alt="Ceramic Mist Diffuser" class="item-img-centric">
+                    <div class="item-details-centric">
+                        <h4 class="item-name-centric">Ceramic Mist Diffuser</h4>
+                        <div class="item-meta-centric">
+                            <span class="item-qty-centric" id="centric-qty-3">Qty: 1</span>
+                            <div class="centric-divider"></div>
+                            <span class="item-price-centric">$85.00</span>
+                        </div>
+                    </div>
+                    <button class="remove-btn-centric" data-id="3">🗑️</button>
+                </div>
+            </div>
+
+            <!-- Promo Code input block (Figma 2:118) -->
+            <div class="promo-section">
+                <div class="promo-input-wrapper">
+                    <input type="text" placeholder="Enter Promo Code" id="promo-code-input">
+                </div>
+                <button class="apply-btn" id="promo-apply-btn">APPLY</button>
+            </div>
+        </div>
+
+        <!-- Footer Checkout (Figma 2:123) -->
+        <footer class="footer-centric">
+            <a href="cart-journey-step.html" class="checkout-btn-centric">
+                <span>Proceed to Secure Checkout</span>
+                <span class="lock-icon">🔒</span>
+            </a>
+        </footer>
+
+        <!-- iOS Bottom Indicator Simulation -->
+        <div class="home-indicator-wrapper">
+            <div class="home-indicator"></div>
+        </div>
+    </div>
+
+    <!-- JS Link -->
+    <script src="js/main.js"></script>
+</body>
+</html>
