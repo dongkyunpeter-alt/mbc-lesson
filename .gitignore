@@ -23,6 +23,11 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# Sensitive files
+docs/.gemini/
+.credentials/
+secrets.json
+
 # Build
 dist/
 build/
